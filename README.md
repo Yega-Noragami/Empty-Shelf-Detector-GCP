@@ -16,7 +16,9 @@ To get started with the Empty Shelf Detection system, you will need to:
 - Install Docker on your local machine (if not already installed).
 
 ### Setup
+
 build Docker image with the help of docker build 
+
 For Mac:
 ```
 docker build --platform linux/amd64 -t <image ID> -f Dockerfile .
@@ -40,7 +42,9 @@ docker build -t <image ID> -f Dockerfile .
 ```
 
 - Deploy the Docker image to Google Cloud Platform.
+
 After building the image you can run the image with the following command
+
 ```
 docker run --name <image ID> -p 8000:8000 <image ID>
 ```
@@ -52,7 +56,7 @@ The option -p 80:80 exposes the Container port 80 as the Host port 80 to the wor
 
 Once the system is up and running, you can start testing it out by pointing a video feed at a retail shelf and observing the results.
 
-#Contributions 
+# Contributions 
 
 We welcome contributions from anyone interested in improving the Empty Shelf Detection system. If you'd like to get involved
 
